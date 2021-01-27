@@ -14,12 +14,12 @@ public class Ass1 {
 		ChromeOptions options= new ChromeOptions();
 		options.addArguments("--disable-notifications");
         System.setProperty("webdriver.chrome.driver",".\\ChromeDriver\\chromedriver.exe");
-        
+                
         ChromeDriver driver= new ChromeDriver(options);
         driver.get("https://login.salesforce.com");
         driver.manage().window().maximize();
         
-        
+        System.out.println("Browser is Launched");
         driver.findElement(By.id("username")).sendKeys("nupela@testleaf.com");
         Thread.sleep(3000);
         driver.findElement(By.id("password")).sendKeys("Bootcamp@1234");
