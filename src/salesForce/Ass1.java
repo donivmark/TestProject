@@ -27,6 +27,7 @@ public class Ass1 {
         driver.findElement(By.id("Login")).click();
         Thread.sleep(3000);
      
+        System.out.println("Changes Added");
         
         driver.findElement(By.xpath("//div[@class='slds-icon-waffle']")).click();
         Thread.sleep(3000);
