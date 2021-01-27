@@ -19,13 +19,14 @@ public class Ass1 {
         driver.get("https://login.salesforce.com");
         driver.manage().window().maximize();
         
-        System.out.println("Browser is Launched");
+        
         driver.findElement(By.id("username")).sendKeys("nupela@testleaf.com");
         Thread.sleep(3000);
         driver.findElement(By.id("password")).sendKeys("Bootcamp@1234");
         Thread.sleep(3000);
         driver.findElement(By.id("Login")).click();
         Thread.sleep(3000);
+     
         
         driver.findElement(By.xpath("//div[@class='slds-icon-waffle']")).click();
         Thread.sleep(3000);
